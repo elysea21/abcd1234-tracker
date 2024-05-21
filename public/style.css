@@ -1,0 +1,26 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar button {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .navbar button:hover {
+            background-color: #555;
+        }
+        .navbar .center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
