@@ -7,47 +7,31 @@
     <link href="./scss/main.scss" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <form id="taskform">
-      <label for="task">Task:</label>
-      <input type="text" name="task" id="taskInput">
-      
-      <br>
-    <!-- Date input -->
-      <label for="dueDate">Due Date: </label>
-      <input type="date" name="dueDate" id="dueDateInput">
-      <br>
-    <!-- Time input -->
-    <label for="completionTime">Completion Time: </label>
-      <input type="time" name="completionTime" id="completionTimeInput">
-      
-      <br>
-      
-    <label for="estimatedTime">Estimated completion time (in mins):</label>
-    <input type="number" name="estimatedTime" id="estimatedTimeInput">
-    <!-- Priority -->
-    <br>
-    
-    <label for="priority">Task Priority:</label>
-    <select name="prority" id="priorityInput">
-      <option value="">Select one</option>
-      <option value="Low">Low</option>
-      <option value="Medium">Medium</option>
-      <option value="High">High</option>
-    </select>
-    
-    <br>
-      
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="tasklist">
-    </ul>
-    <!-- <script src="script.js"></script> -->
-    <!-- Swap the scripts to see the working solution -->
-    <script src="script.js"></script>
-    <div class="navbar">
-      <button>Search</button>
-      <button class="center">Tracks</button>
-      <button>Library</button>
+  <div class="header_row">
+    <div class="header_row_nav">
+      <header id="navbar">
+        <nav class="navbar-container">
+          <a href="/" class="home-link">TRACKS</a>
+          <button type="button" id="navbar-toggle">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="navbar-menu">
+            <ul class="navbar-links">
+              <li class="navbar-item">
+                <a class="navbar-link" href="">Search</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="">Library</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
     </div>
+  </div>
+    <script src="script.js"></script>
   </body>
 </html>
